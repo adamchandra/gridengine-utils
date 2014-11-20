@@ -1,0 +1,8 @@
+)
+
+for pdf in ${pdfs[@]}
+do
+    # echo $pdf
+    run_pstotext ${pdf}
+done
+
