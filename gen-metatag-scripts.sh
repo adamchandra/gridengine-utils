@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Generate a set of scripts to run Metatagger on pstotext output
+
+
 find . -type f -name "*.pstotext.xml" -printf "%p -> %p.meta.xml\n" > .meta-tmp
 
 split -a 4 -d -l 100 .meta-tmp .meta-proc.
